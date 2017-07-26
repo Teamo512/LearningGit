@@ -3,7 +3,7 @@
 1. 工作区：就是你电脑上能看到的工作目录。
 2. 暂存区：stage或index， 一般存放在工作目录的“.git“目录下index文件中，即".git/index"，也叫索引。
 3. 版本库：是工作区的一个隐藏目录".git".
-[![git](index_files/git.jpg "git")](http://www.runoob.com/wp-content/uploads/2015/02/1352126739_7909.jpg "git")
+[![git](./git.jpg "git")](http://www.runoob.com/wp-content/uploads/2015/02/1352126739_7909.jpg "git")
 
 ### git基本命令
 ##### 1. git init
@@ -96,7 +96,7 @@ git mv [-v] [-f] [-n] [-k] source destination
 git mv [-v] [-f] [-n] [-k] source destinationDirectory
 ```
 
-第一种形式中，它将重命名source为destination，source必须存在，并且是文件，符号链接或目录。 在第二种形式中，最后一个参数必须是现有的目录; 给定的源source将被移动到这个目录中。
+第一种形式中，它将重命名source为destination，source必须存在，并且是文件，符号链接或目录。 在第二种形式中，最后一个参数必须是现有的目录; 给的源source将被移动到这个目录中。
 
 > git mv test.txt hell.txt
 运行此命令等同于运行:
@@ -109,11 +109,13 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 
 #### 13. git remote
 管理一组跟踪的远程存储库。
-> 1. git remote  不带参数，表示列出所有已经存在的远程仓库。
-2. git remote -v 表示列出远程仓库的url地址详细信息。
+1. git remote  
+> 不带参数，表示列出所有已经存在的远程仓库。
+2. git remote -v 
+> 表示列出远程仓库的url地址详细信息。
 3. git remote add 仓库名 仓库URL
-表示添加一个新的远程仓库，同时指定一个简单的名字(随便起)。
->> 比如：git remote add origin git@github.com:Teamo512/test.git
+> 表示添加一个新的远程仓库，同时指定一个简单的名字(随便起)。
+比如：git remote add origin git@github.com:Teamo512/test.git
 
 
 #### 14. git push
@@ -121,19 +123,19 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 > git push 远程仓库名 本地分支名 **:** 远程分支名
 
 1. git push origin master
-表示将本地的master分支推送到远程仓库为origin的master分支上。如果远程master分支不存在，则会新建。
+> 表示将本地的master分支推送到远程仓库为origin的master分支上。如果远程master分支不存在，则会新建。
 
 2. git push origin :master
-即本地分支名为空，表示删除指定的远程分支，因为推送的是一个空的本地分支到远程分支。也就等同于：git push origin --delete master。
+> 即本地分支名为空，表示删除指定的远程分支，因为推送的是一个空的本地分支到远程分支。也就等同于：git push origin --delete master。
 
 3. git push origin
-表示将当前分支推送到origin仓库的对应分支，如果当前分支只有一个追踪分支，那么远程仓库名都可以省去：git push。
+> 表示将当前分支推送到origin仓库的对应分支，如果当前分支只有一个追踪分支，那么远程仓库名都可以省去：git push。
 
 4. git push -u origin master
-如果当前分支与多个仓库存在追踪关系，则参数 -u 表示指定一个默认仓库，第一次这样操作后，在后续的操作中，可以不用加任何参数，直接使用git push即可。
+> 如果当前分支与多个仓库存在追踪关系，则参数 -u 表示指定一个默认仓库，第一次这样操作后，在后续的操作中，可以不用加任何参数，直接使用git push即可。
 
 5. git push --all origin
-表示将当前本地所有分支全部推送到origin远程仓库中。
+> 表示将当前本地所有分支全部推送到origin远程仓库中。
 
 总之，方法很多，可参考：[git push命令](http://www.yiibai.com/git/git_push.html "git push命令")
 
@@ -148,14 +150,19 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 
 #### 17. git checkout -b branchName
 这条命令是上面两条命令的综合，即表示：创建并切换到分支branchName上。
+
 **git checkout -b New_branchName branchName**
-表示在branchName分支上创建新分支New_branchName，并切换到该新分支上。
+> 表示在branchName分支上创建新分支New_branchName，并切换到该新分支上。
 
 
 #### 18. git branch
 表示列出本地仓库的所有分支，且当前分支前面会有一个 **\*** 号。
-**git branch -f** 参数: -f 表示查看拉取回本地的远程分支。
-**git branch -a** 参数: -a 表示查看所有分支（包括本地分支和远程分支）
+
+**git branch -f**
+> 参数: -f 表示查看拉取回本地的远程分支。
+
+**git branch -a**
+> 参数: -a 表示查看所有分支（包括本地分支和远程分支）
 
 #### 19. git merge bak_branch
 表示将指定分支bak_branch合并到当前分支上。这种合并模式是Fast-forward模式，“快进模式”， 直接把master指向bak_branch的当前提交，仅仅是指针的移动，所以合并速度非常快。

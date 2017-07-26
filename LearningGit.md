@@ -188,10 +188,10 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 #### 27. git tag -s tagName -m "message"
 -s 表示通过GPG私钥加密标签。
 > GPG的安装，简介，具体操作，参考：
-[在Windows系统使用Gpg4win进行加密解密](http://blog.csdn.net/u014076884/article/details/46498239 "在Windows系统使用Gpg4win进行加密解密")
-[带GPG签名的Git tag](http://airk000.github.io/git/2013/09/30/git-tag-with-gpg-key "带GPG签名的Git tag")
-[ gpg: skipped "xxx": secret key not available的一种解决方法](http://blog.csdn.net/sh21_/article/details/71082422 " gpg: skipped "xxx": secret key not available的一种解决方法")
-[GPG入门教程](http://www.ruanyifeng.com/blog/2013/07/gpg.html "GPG入门教程")
+  [在Windows系统使用Gpg4win进行加密解密](http://blog.csdn.net/u014076884/article/details/46498239 "在Windows系统使用Gpg4win进行加密解密")
+  [带GPG签名的Git tag](http://airk000.github.io/git/2013/09/30/git-tag-with-gpg-key "带GPG签名的Git tag")
+  [ gpg: skipped "xxx": secret key not available的一种解决方法](http://blog.csdn.net/sh21_/article/details/71082422 " gpg: skipped "xxx": secret key not available的一种解决方法")
+  [GPG入门教程](http://www.ruanyifeng.com/blog/2013/07/gpg.html "GPG入门教程")
 
 #### 28. git tag -d tagName
 删除标签。这是删除本地的标签。
@@ -207,7 +207,7 @@ git push origin --tags
 #### .gitignore文件
 工作区中不想被提交的文件。将所有不想被跟踪的文件名写到.gitignore中。
 > 如果.gitignore中一个规则表示某一类文件将不会被跟踪，但现在有一个该类文件希望被跟踪，比如，.gitignore文件中有这样一条规则：\*.class即表示以class为后缀的额文件都将被忽略。但现在有个A.class文件希望被跟踪。则可以使用-f参数强制添加。**git add -f A.class**。
-** git check-ignore -v A.class ** 这条命令可以查看是.gitignore文件中那条规则导致A.class文件被忽视。
+**git check-ignore -v A.class** 这条命令可以查看是.gitignore文件中那条规则导致A.class文件被忽视。
 
 #### 31. git fetch origin
 从一个远程仓库origin中拉取分支或标签等对象。拉取到本地的.git/refs/目录中。所有分支存储在.git/refs/remotes/origin/目录下，所有标签存储正在.git/refs/tags/目录中。
@@ -219,7 +219,7 @@ git push origin --tags
 该命令用于从一个仓库获取分支并与当前仓库合并。
 等同于一下两条命令的缩写：
 > 1. git fetch
-  2. git merge
+ 2. git merge
 
 - **git pull 远程仓库 远程分支 ： 本地分支**
 表示拉取回远程仓库的指定分支和本地指定的分支合并。如：**git pull origin master:master**
@@ -232,7 +232,9 @@ git push origin --tags
 ---
 以上是本人初学Git时，边学边整理的常用命令，仅是文字描述。学习Git作重要的还是多操作，多敲命令。
 本笔记，比较简单，并不详细，希望以后慢慢更新吧！
+
 参考文献：
-   [廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000 "廖雪峰Git教程")
-   [RUNOOB.com Git教程](http://www.runoob.com/git/git-tutorial.html "RUNOOB.com Git教程")
-   [易百教程——Git教程](http://www.yiibai.com/git/ "易百教程——Git教程")
+
+[廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000 "廖雪峰Git教程")
+[RUNOOB.com Git教程](http://www.runoob.com/git/git-tutorial.html "RUNOOB.com Git教程")
+[易百教程——Git教程](http://www.yiibai.com/git/ "易百教程——Git教程")

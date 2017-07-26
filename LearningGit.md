@@ -42,7 +42,7 @@ A  fist.txt
 AM second.txt
 ```
 
-在 git status -s 中"AM"状态的意思是该文件在添加到暂存区后有了新的改动。
+在git status -s 中"AM"状态的意思是该文件在添加到暂存区后有了新的改动。
 
 #### 5. git diff
 是用来查看执行git status的结果的详细信息。
@@ -121,7 +121,7 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 
 #### 14. git push
 将本地分支的更新推送到远程仓库。
-> git push 远程仓库名 本地分支名 ** : ** 远程分支名
+> git push 远程仓库名 本地分支名 **:** 远程分支名
 
 1. git push origin master
 > 表示将本地的master分支推送到远程仓库为origin的master分支上。如果远程master分支不存在，则会新建。
@@ -152,19 +152,19 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 #### 17. git checkout -b branchName
 这条命令是上面两条命令的综合，即表示：创建并切换到分支branchName上。
 
-** git checkout -b New_branchName branchName **
+**git checkout -b New_branchName branchName**
 
 > 表示在branchName分支上创建新分支New_branchName，并切换到该新分支上。
 
 
 #### 18. git branch
-表示列出本地仓库的所有分支，且当前分支前面会有一个** \* **号。
+表示列出本地仓库的所有分支，且当前分支前面会有一个\*号。
 
-** git branch -f **
+**git branch -f**
 
 > 参数: -f 表示查看拉取回本地的远程分支。
 
-** git branch -a **
+**git branch -a**
 > 参数: -a 表示查看所有分支（包括本地分支和远程分支）
 
 #### 19. git merge bak_branch

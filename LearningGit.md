@@ -187,11 +187,11 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 
 #### 27. git tag -s tagName -m "message"
 -s 表示通过GPG私钥加密标签。
-> GPG的安装，简介，具体操作，参考：
-  [在Windows系统使用Gpg4win进行加密解密](http://blog.csdn.net/u014076884/article/details/46498239 "在Windows系统使用Gpg4win进行加密解密")
-  [带GPG签名的Git tag](http://airk000.github.io/git/2013/09/30/git-tag-with-gpg-key "带GPG签名的Git tag")
-  [ gpg: skipped "xxx": secret key not available的一种解决方法](http://blog.csdn.net/sh21_/article/details/71082422 " gpg: skipped "xxx": secret key not available的一种解决方法")
-  [GPG入门教程](http://www.ruanyifeng.com/blog/2013/07/gpg.html "GPG入门教程")
+GPG的安装，简介，具体操作，参考：
+[在Windows系统使用Gpg4win进行加密解密](http://blog.csdn.net/u014076884/article/details/46498239 "在Windows系统使用Gpg4win进行加密解密")
+[带GPG签名的Git tag](http://airk000.github.io/git/2013/09/30/git-tag-with-gpg-key "带GPG签名的Git tag")
+[ gpg: skipped "xxx": secret key not available的一种解决方法](http://blog.csdn.net/sh21_/article/details/71082422 " gpg: skipped "xxx": secret key not available的一种解决方法")
+[GPG入门教程](http://www.ruanyifeng.com/blog/2013/07/gpg.html "GPG入门教程")
 
 #### 28. git tag -d tagName
 删除标签。这是删除本地的标签。
@@ -218,8 +218,8 @@ git push origin --tags
 #### 32. git pull命令
 该命令用于从一个仓库获取分支并与当前仓库合并。
 等同于一下两条命令的缩写：
-> 1. git fetch
- 2. git merge
+1. git fetch
+2. git merge
 
 - **git pull 远程仓库 远程分支 ： 本地分支**
 表示拉取回远程仓库的指定分支和本地指定的分支合并。如：**git pull origin master:master**

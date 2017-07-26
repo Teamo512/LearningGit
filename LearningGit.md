@@ -200,7 +200,7 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 GPG的安装，简介，具体操作，参考：
 - [在Windows系统使用Gpg4win进行加密解密](http://blog.csdn.net/u014076884/article/details/46498239 "在Windows系统使用Gpg4win进行加密解密")
 - [带GPG签名的Git tag](http://airk000.github.io/git/2013/09/30/git-tag-with-gpg-key "带GPG签名的Git tag")
-- [gpg中secret key not available的一种解决方法](http://blog.csdn.net/sh21_/article/details/71082422 "gpg: skipped "xxx": secret key not available的一种解决方法")
+- [gpg中secret key not available的一种解决方法](http://blog.csdn.net/sh21_/article/details/71082422 "gpg中secret key not available的一种解决方法")
 - [GPG入门教程](http://www.ruanyifeng.com/blog/2013/07/gpg.html "GPG入门教程")
 
 #### 28. git tag -d tagName

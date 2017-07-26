@@ -99,6 +99,7 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 第一种形式中，它将重命名source为destination，source必须存在，并且是文件，符号链接或目录。 在第二种形式中，最后一个参数必须是现有的目录; 给的源source将被移动到这个目录中。
 
 > git mv test.txt hell.txt
+
 运行此命令等同于运行:
 1. mv test.txt hello.txt
 2. git rm test.txt
@@ -120,7 +121,7 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 
 #### 14. git push
 将本地分支的更新推送到远程仓库。
-> git push 远程仓库名 本地分支名 **:** 远程分支名
+> git push 远程仓库名 本地分支名 ** : ** 远程分支名
 
 1. git push origin master
 > 表示将本地的master分支推送到远程仓库为origin的master分支上。如果远程master分支不存在，则会新建。
@@ -151,17 +152,19 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 #### 17. git checkout -b branchName
 这条命令是上面两条命令的综合，即表示：创建并切换到分支branchName上。
 
-**git checkout -b New_branchName branchName**
+** git checkout -b New_branchName branchName **
+
 > 表示在branchName分支上创建新分支New_branchName，并切换到该新分支上。
 
 
 #### 18. git branch
-表示列出本地仓库的所有分支，且当前分支前面会有一个 **\*** 号。
+表示列出本地仓库的所有分支，且当前分支前面会有一个** \* **号。
 
-**git branch -f**
+** git branch -f **
+
 > 参数: -f 表示查看拉取回本地的远程分支。
 
-**git branch -a**
+** git branch -a **
 > 参数: -a 表示查看所有分支（包括本地分支和远程分支）
 
 #### 19. git merge bak_branch

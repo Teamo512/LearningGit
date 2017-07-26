@@ -198,10 +198,10 @@ git mv [-v] [-f] [-n] [-k] source destinationDirectory
 #### 27. git tag -s tagName -m "message"
 -s 表示通过GPG私钥加密标签。
 GPG的安装，简介，具体操作，参考：
-[在Windows系统使用Gpg4win进行加密解密](http://blog.csdn.net/u014076884/article/details/46498239 "在Windows系统使用Gpg4win进行加密解密")
-[带GPG签名的Git tag](http://airk000.github.io/git/2013/09/30/git-tag-with-gpg-key "带GPG签名的Git tag")
-[ gpg: skipped "xxx": secret key not available的一种解决方法](http://blog.csdn.net/sh21_/article/details/71082422 " gpg: skipped "xxx": secret key not available的一种解决方法")
-[GPG入门教程](http://www.ruanyifeng.com/blog/2013/07/gpg.html "GPG入门教程")
+- [在Windows系统使用Gpg4win进行加密解密](http://blog.csdn.net/u014076884/article/details/46498239 "在Windows系统使用Gpg4win进行加密解密")
+- [带GPG签名的Git tag](http://airk000.github.io/git/2013/09/30/git-tag-with-gpg-key "带GPG签名的Git tag")
+- [gpg: skipped "xxx": secret key not available的一种解决方法](http://blog.csdn.net/sh21_/article/details/71082422 " gpg: skipped "xxx": secret key not available的一种解决方法")
+- [GPG入门教程](http://www.ruanyifeng.com/blog/2013/07/gpg.html "GPG入门教程")
 
 #### 28. git tag -d tagName
 删除标签。这是删除本地的标签。
@@ -245,6 +245,6 @@ git push origin --tags
 
 参考文献：
 
-[廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000 "廖雪峰Git教程")
-[RUNOOB.com Git教程](http://www.runoob.com/git/git-tutorial.html "RUNOOB.com Git教程")
-[易百教程——Git教程](http://www.yiibai.com/git/ "易百教程——Git教程")
+- [廖雪峰Git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000 "廖雪峰Git教程")
+- [RUNOOB.com Git教程](http://www.runoob.com/git/git-tutorial.html "RUNOOB.com Git教程")
+- [易百教程——Git教程](http://www.yiibai.com/git/ "易百教程——Git教程")

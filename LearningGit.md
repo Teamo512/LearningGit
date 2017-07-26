@@ -67,7 +67,7 @@ git diff HEAD   ：查看工作区和版本库里面最新版本的区别
 #### 9. git reset --hard HEAD^
 HEAD^表示回退到最近一次提交的版本，即上一个版本。
 HEAD^^ 表示回到上上个版本。
-对于更多的版本，可用HEAD~n代替，其中n表示要退回的版本数，比如HEAD~45，表示退回到第45个版本。
+对于更多的版本，可用HEAD\~n代替，其中n表示要退回的版本数，比如HEAD\~45，表示退回到第45个版本。
 对于，当按时间近到远依次为A、B、C、D四个版本，当退到C时，再想回到B，可以用git reflog查看B的B_commit_id，然后git reset --hard B_commit_id，这样就可以回到B。
 
 
